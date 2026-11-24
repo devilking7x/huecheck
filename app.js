@@ -317,6 +317,7 @@
     var box = el('safe-list');
     if (!combos.length) {
       box.innerHTML = '<p class="honest-empty">No AA-safe text combination in this palette — add a darker or lighter colour.</p>';
+      el('safe-count').textContent = '0 AA-safe ordered pairs';
       return;
     }
     box.innerHTML = '<ol>' + combos.map(function (c) {
