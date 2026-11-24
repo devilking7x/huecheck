@@ -1,0 +1,68 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; margin: 0;
+  background: #f8fafc; color: #111827; line-height: 1.5; }
+header { background: #0f172a; color: #f8fafc; padding: 2rem 1.5rem 1.5rem; }
+header h1 { margin: 0; font-size: 2.2rem; letter-spacing: -0.02em; }
+header .tagline { font-size: 1.25rem; color: #f59e0b; margin: 0.25rem 0 0.75rem; font-weight: 600; }
+header .intro { max-width: 46rem; color: #cbd5e1; margin: 0; }
+main { max-width: 62rem; margin: 0 auto; padding: 1rem 1.5rem 2rem; }
+section { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px;
+  padding: 1.25rem 1.5rem; margin: 1rem 0; }
+h2 { margin-top: 0; font-size: 1.3rem; }
+.count { font-size: 0.85rem; color: #64748b; font-weight: 400; }
+.hint { color: #475569; font-size: 0.95rem; }
+button { cursor: pointer; background: #1d4ed8; color: #fff; border: none;
+  border-radius: 6px; padding: 0.45rem 0.9rem; font-size: 0.95rem; }
+button:hover { background: #1e40af; }
+button:disabled { opacity: 0.4; cursor: default; }
+.samples button, .export-btns button { background: #e2e8f0; color: #111827; margin: 0.2rem 0.2rem 0.2rem 0; }
+.samples button:hover, .export-btns button:hover { background: #cbd5e1; }
+input[type="text"] { padding: 0.45rem 0.6rem; border: 1px solid #94a3b8; border-radius: 6px;
+  font-size: 1rem; width: 9rem; }
+input[type="color"] { width: 3rem; height: 2.2rem; padding: 0; border: 1px solid #94a3b8;
+  border-radius: 6px; background: #fff; vertical-align: middle; }
+.add-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
+.msg { color: #475569; font-size: 0.9rem; }
+.palette { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
+.colour-chip { border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; width: 7.5rem; }
+.colour-chip .swatch { height: 3.5rem; border-bottom: 1px solid #e2e8f0; }
+.chip-hex { text-align: center; font-family: ui-monospace, monospace; padding: 0.25rem; font-size: 0.9rem; }
+.chip-btns { display: flex; justify-content: center; gap: 0.2rem; padding-bottom: 0.35rem; }
+.chip-btns button { background: #f1f5f9; color: #111827; padding: 0.15rem 0.5rem; font-size: 0.85rem; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border-bottom: 1px solid #e2e8f0; padding: 0.5rem 0.6rem; text-align: left; vertical-align: middle; }
+thead th { background: #f1f5f9; }
+tr.pair-row { cursor: pointer; }
+tr.pair-row:hover { background: #f8fafc; }
+tr.pair-row.selected { background: #eff6ff; }
+.mini-swatch { display: inline-block; width: 1rem; height: 1rem; border: 1px solid #94a3b8;
+  border-radius: 3px; vertical-align: -0.15rem; }
+.chip { display: inline-block; border-radius: 999px; padding: 0.1rem 0.55rem; font-size: 0.8rem;
+  margin: 0.1rem 0.15rem 0.1rem 0; white-space: nowrap; }
+.chip.pass { background: #dcfce7; color: #166534; }
+.chip.fail { background: #fee2e2; color: #991b1b; }
+.preview { margin-top: 1rem; }
+.preview-label { color: #475569; }
+.preview-sample { border: 1px solid #94a3b8; border-radius: 8px; padding: 1rem 1.25rem; margin: 0.5rem 0 1rem; }
+.preview-normal { font-size: 16px; margin: 0 0 0.75rem; }
+.preview-large { font-size: 24px; font-weight: 700; margin: 0; }
+.cvd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.75rem; }
+.cvd-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 0.75rem; font-size: 0.92rem; }
+.cvd-orig { font-weight: 600; margin-bottom: 0.4rem; }
+.cvd-row { padding: 0.15rem 0; }
+.cvd-type { display: inline-block; width: 7.5rem; color: #475569; }
+.cvd-worst { margin-top: 1rem; background: #f8fafc; border: 1px solid #e2e8f0;
+  border-radius: 8px; padding: 0.75rem 1rem; }
+.cvd-worst ul { margin: 0.4rem 0 0; }
+#safe-list ol { margin: 0.5rem 0; padding-left: 1.5rem; }
+#safe-list li { padding: 0.25rem 0; }
+.honest-empty { background: #fef3c7; border: 1px solid #f59e0b; border-radius: 8px;
+  padding: 0.75rem 1rem; font-weight: 600; }
+textarea { width: 100%; margin-top: 0.75rem; font-family: ui-monospace, monospace;
+  font-size: 0.9rem; border: 1px solid #94a3b8; border-radius: 6px; padding: 0.6rem; }
+#limits ul { margin: 0.5rem 0; padding-left: 1.4rem; }
+#limits li { margin: 0.4rem 0; }
+footer { text-align: center; color: #64748b; font-size: 0.9rem; padding: 1rem; }
+footer a { color: #1d4ed8; }
+@media (max-width: 600px) { .cvd-type { width: 6.5rem; } }

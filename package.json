@@ -1,0 +1,1 @@
+{"description":"HueCheck — a colour-accessibility lab: WCAG contrast, CVD simulation, safe-combo finder. Zero dependencies.","license":"MIT","name":"huecheck","scripts":{"smoke":"cd ~/workspace/video-build && node ~/workspace/hackathons-wave3/huecheck/tests/smoke.mjs","test":"node --test tests/core.test.js"},"version":"1.0.0"}
